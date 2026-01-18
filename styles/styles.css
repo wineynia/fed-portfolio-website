@@ -106,7 +106,7 @@ h2 {
 }
 
 .hero h1 {
-  font-size: 2rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 1rem;
 }
 
