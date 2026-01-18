@@ -41,7 +41,15 @@
       <section id="home" class="hero">
         <img
           src="./images/portfolio-profile-pic.png"
+          srcset="
+            ./images/portfolio-profile-pic.png 300w,
+            ./images/portfolio-profile-pic.png 600w
+          "
+          sizes="(max-width: 768px) 180px, (max-width: 1024px) 200px, 288px"
           alt="Profile picture of Gabriella Arif, Front-End Developer student"
+          width="300"
+          height="300"
+          fetchpriority="high"
           data-aos="zoom-in"
         />
         <h1 data-aos="fade-down" data-aos-delay="200">Gabriella Arif</h1>
@@ -146,6 +154,6 @@
       <p>&copy; 2026 GWA</p>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
   </body>
 </html>
