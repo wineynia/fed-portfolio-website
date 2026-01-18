@@ -31,6 +31,6 @@ Borneo Jungle Adventure
 Weather and Country Information
 
 📱 Live Demo
-Deployed on GitHub Pages
+Deployed on GitHub Pages (https://wineynia.github.io/fed-portfolio-website/)
 
 
