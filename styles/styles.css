@@ -1,8 +1,8 @@
 :root {
-  --main-color: #FC9E4F;
-  --second-color: #FC9E4F;
-  --third-color: #EDD382;
-  --fourth-color: #F2F3AE;
+  --main-color: #dcf2b0;
+  --second-color: #cfe0c3;
+  --third-color: #70a9a1;
+  --fourth-color: #cfe0c3;
   --text-color: #020122;
 }
 
@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.6;
   color: var(--text-color);
   overflow-x: hidden;
@@ -26,7 +26,7 @@ header {
   width: 100%;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -84,7 +84,8 @@ section {
   margin: 0 auto;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: var(--text-color);
   margin-bottom: 1rem;
 }
@@ -120,17 +121,19 @@ h1, h2 {
 .btn {
   display: inline-block;
   background: var(--main-color);
-  color: white;
+  color: var(--text-color);
   padding: 0.8rem 1.5rem;
   text-decoration: none;
   border-radius: 50px;
   font-weight: 500;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(252,158,79,0.4);
+  box-shadow: 0 10px 20px rgba(252, 158, 79, 0.4);
 }
 
 .skills-grid {
@@ -144,7 +147,7 @@ h1, h2 {
   background: white;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -169,7 +172,7 @@ h1, h2 {
   background: white;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   animation: fadeInUp 0.6s ease forwards;
   opacity: 0;
@@ -182,8 +185,8 @@ h1, h2 {
 
 @keyframes fadeInUp {
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -212,14 +215,14 @@ h1, h2 {
   font-size: 0.9rem;
 }
 
-.gh { 
-  background: #000; 
-  color: white; 
+.gh {
+  background: #000;
+  color: white;
 }
 
-.demo { 
-  background: var(--main-color); 
-  color: white; 
+.demo {
+  background: var(--main-color);
+  color: white;
 }
 
 #projects-list {
@@ -234,7 +237,8 @@ h1, h2 {
   gap: 1rem;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -273,111 +277,111 @@ footer {
 
 @media (min-width: 768px) {
   nav {
-      padding: 0 2rem;
+    padding: 0 2rem;
   }
-  
+
   .logo {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
-  
+
   .hero {
-      padding: 7rem 2rem;
+    padding: 7rem 2rem;
   }
-  
+
   .hero img {
-      width: 200px;
-      height: 200px;
+    width: 200px;
+    height: 200px;
   }
-  
+
   .hero h1 {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
-  
+
   .hero p {
-      font-size: 1.1rem;
+    font-size: 1.1rem;
   }
-  
+
   section {
-      padding: 4rem 2rem;
+    padding: 4rem 2rem;
   }
-  
+
   .skills-grid {
-      flex-direction: row;
-      flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  
+
   .skill-card {
-      flex: 1 1 45%;
+    flex: 1 1 45%;
   }
-  
+
   .projects-grid {
-      flex-direction: row;
-      flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  
+
   .project-card {
-      flex: 1 1 45%;
+    flex: 1 1 45%;
   }
 }
 
 @media (min-width: 1024px) {
   .nav-links {
-      display: flex;
-      list-style: none;
-      gap: 2rem;
+    display: flex;
+    list-style: none;
+    gap: 2rem;
   }
-  
+
   .nav-links a {
-      color: var(--text-color);
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
   }
-  
+
   .nav-links a:hover {
-      color: var(--fourth-color);
+    color: var(--fourth-color);
   }
-  
+
   .hamburger {
-      display: none;
+    display: none;
   }
-  
+
   .hero h1 {
-      font-size: 3rem;
+    font-size: 3rem;
   }
-  
+
   .skills-grid {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      display: grid !important;
-      gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid !important;
+    gap: 2rem;
   }
-  
+
   .skill-card {
-      flex: none;
+    flex: none;
   }
-  
+
   .projects-grid {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      display: grid !important;
-      gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: grid !important;
+    gap: 2rem;
   }
-  
+
   .project-card {
-      flex: none;
-      width: auto;
+    flex: none;
+    width: auto;
   }
-  
+
   section {
-      padding: 5rem 2rem;
+    padding: 5rem 2rem;
   }
-  
+
   .contact form {
-      max-width: 600px;
+    max-width: 600px;
   }
 }
 
 @media (min-width: 1200px) {
   nav {
-      padding: 0 3rem;
+    padding: 0 3rem;
   }
 }
