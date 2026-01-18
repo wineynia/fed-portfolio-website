@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - GWA | Front-End Developer</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑‍💻</text></svg>"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Gabriella Arif</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="hero">
+        <img
+          src="./images/portfolio-profile-pic.png"
+          alt="Profile picture of Gabriella Arif, Front-End Developer student"
+          data-aos="zoom-in"
+        />
+        <h1 data-aos="fade-down" data-aos-delay="200">Gabriella Arif</h1>
+        <p data-aos="fade-up" data-aos-delay="400">
+          Aspiring Front-End Developer from Stockholm. Passionate about creating
+          responsive, accessible websites. Recently completed API course with
+          hands-on projects.
+        </p>
+        <a href="#projects" class="btn" data-aos="fade-up" data-aos-delay="600"
+          >View My Work</a
+        >
+      </section>
+      <section id="about">
+        <h2 data-aos="fade-up">About Me</h2>
+        <p data-aos="fade-up" data-aos-delay="200">
+          Hi! I'm Gabriella Arif, a dedicated Front-End Developer student based
+          in Bromma, Stockholm. During my Front End Developer Course, I built
+          several projects showcasing HTML, CSS, JavaScript, and API
+          integrations. This portfolio serves as my CV – employers value real
+          work over degrees, so check out my projects below!
+        </p>
+      </section>
+      <section id="skills" class="skills">
+        <h2 data-aos="fade-up">Tech Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card" data-aos="fade-right">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS3</h3>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <i class="fab fa-js-square"></i>
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skill-card" data-aos="fade-up">
+            <i class="fab fa-github"></i>
+            <h3>GitHub</h3>
+          </div>
+          <div class="skill-card" data-aos="fade-left">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Responsive Design</h3>
+          </div>
+          <div class="skill-card" data-aos="fade-left" data-aos-delay="200">
+            <i class="fas fa-universal-access"></i>
+            <h3>Accessibility</h3>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="projects">
+        <h2 data-aos="fade-up">Projects</h2>
+        <p data-aos="fade-up" data-aos-delay="200">
+          Here are my course projects. Click for GitHub and demo (where
+          deployed).
+        </p>
+        <div
+          id="projects-list"
+          class="projects-grid"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        ></div>
+        <p class="loading" id="loading">Loading projects from GitHub...</p>
+        <p class="error" id="error" style="display: none"></p>
+      </section>
+      <section id="contact" class="contact">
+        <h2 data-aos="fade-up">Get In Touch</h2>
+        <p data-aos="fade-up" data-aos-delay="200">
+          Have a project in mind? Send me a message!
+        </p>
+        <form autocomplete="on" data-aos="fade-up" data-aos-delay="400">
+          <input
+            type="text"
+            name="name"
+            autocomplete="name"
+            placeholder="Your Name"
+            required
+            aria-label="Your Name"
+          />
+          <input
+            type="email"
+            name="email"
+            autocomplete="email"
+            placeholder="Your Email"
+            required
+            aria-label="Your Email"
+          />
+          <textarea
+            name="message"
+            autocomplete="off"
+            rows="5"
+            placeholder="Your Message"
+            required
+            aria-label="Your Message"
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 GWA. Built with ❤️ for my API course final assignment.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
