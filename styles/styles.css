@@ -1,7 +1,7 @@
 :root {
-  --main-color: #dcf2b0;
+  --main-color: #bbb193;
   --second-color: #cfe0c3;
-  --third-color: #70a9a1;
+  --third-color: #1c5d99;
   --fourth-color: #cfe0c3;
   --text-color: #020122;
 }
@@ -144,7 +144,7 @@ h2 {
 }
 
 .skill-card {
-  background: white;
+  background: cornsilk;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -169,7 +169,7 @@ h2 {
 }
 
 .project-card {
-  background: white;
+  background: cornsilk;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -222,7 +222,7 @@ h2 {
 
 .demo {
   background: var(--main-color);
-  color: white;
+  color: var(--text-color);
 }
 
 #projects-list {
