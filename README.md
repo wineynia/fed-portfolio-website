@@ -1,4 +1,4 @@
-Gabriella Arif - Front-End Developer Portfolio
+Front-End Developer Portfolio
 
 🎯 Features
 Responsive mobile-first design (320px - 1600px)
