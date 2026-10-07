@@ -90,9 +90,9 @@ async function loadProjects() {
           repo.name.toLowerCase().includes("project") ||
           repo.name.toLowerCase().includes("portfolio"),
       )
+      .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
       .slice(0, 8)
-      .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
-
+      
     if (projects.length === 0) {
       container.innerHTML =
         '<div style="grid-column:1/-1;text-align:center;padding:2rem;color:var(--text-color);"><p>No projects found. Visit my <a href="https://github.com/wineynia" target="_blank">GitHub</a>.</p></div>';
