@@ -83,13 +83,16 @@ async function loadProjects() {
     ];
     const projects = repos
       .filter(
-        (repo) =>
+        (repo) => {
+          const repoNameLower = repo.name.toLowerCase()
+          return (
           projectNames.some((name) =>
-            repo.name.toLowerCase().includes(name.toLowerCase()),
+            repoNameLower.includes(name.toLowerCase()),
           ) ||
-          repo.name.toLowerCase().includes("project") ||
-          repo.name.toLowerCase().includes("portfolio"),
-      )
+          repoNameLower.includes("project") ||
+          repoNameLower.includes("portfolio")
+        )
+      })
       .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
       .slice(0, 20)
       
