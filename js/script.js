@@ -73,6 +73,13 @@ async function loadProjects() {
       "fitness-gym-page",
       "25FEDassignment1",
       "borneo-jungle-adventure",
+      "food-delicacies-routes",
+      "tulips-website",
+      "travel-website",
+      "pocket-garden",
+      "breweries-finder",
+      "hss_scouterna",
+      "Automated-Testing"
     ];
     const projects = repos
       .filter(
