@@ -91,7 +91,7 @@ async function loadProjects() {
           repo.name.toLowerCase().includes("portfolio"),
       )
       .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
-      .slice(0, 8)
+      .slice(0, 20)
       
     if (projects.length === 0) {
       container.innerHTML =
